@@ -1,0 +1,211 @@
+{% extends "uploads/basic.html" %}
+<title>AIPIF &mdash; {% block title %} About Us {% endblock %}</title>
+{% block body %}
+{% load static %}
+<style>
+{% block css %}
+  #about_more {display: none;}
+  {% endblock %}
+</style>
+
+<div class="ftco-blocks-cover-1">
+  <div class="site-section-cover overlay" style="background-image: url({% static 'images/bg.jpg' %})">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-md-5" data-aos="fade-up">
+          <h1 class="mb-3 text-white">About Us</h1>
+          <p>AIPIF is a non-political, moral,
+            ethical, and purely humanitarian
+            organization serving humanity
+            by spreading the message of
+            love, brotherhood, and human
+            values among humankind
+            irrespective of caste, creed, or
+            religion with the sole purpose of
+            connecting person-to-person
+            and heart-to-heart.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="site-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="heading-39101 mb-5">
+          <span class="backdrop">Story</span>
+          <span class="subtitle-39191">Founder</span>
+          <h3>About The Founder</h3>
+        </div>
+        <p>Maulana Abul Hasan Nadvi, often referred to as Ali Miyan, was
+          an influential figure in the Islamic world.</p>
+        <p>He authored over fifty books in various languages, including "The
+          Message of Humanity." </p>
+        <p>He was a renowned international Islamic scholar & was Vice Chancelor of Darul-Uloom Nadwat-ul-ulama.</p>
+        <p>Was awarded King Faisal award for the Humanitarian services</p>
+        <p>His efforts to bridge understanding between different religious
+          communities have left a lasting legacy among the masses.</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="{% static 'images/founder.png' %}" alt="Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="site-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 order-2 ml-auto">
+        <div class="heading-39101 mb-5">
+          <span class="backdrop">Mission</span>
+          <span class="subtitle-39191">Our Mission</span>
+          <h3>Aims & Objectives</h3>
+        </div>
+        <p>1. To create mutual good-will and an atmosphere of affection kindness purely on human and national levels
+          founded on BROTHERHOOD and WELL-BEING of MANKIND generally; to put an end to violence, lawlessness, anarchy,
+          moral degradation and create FELLOW-FEELING towards each other.</p>
+        <p>2. To hold Public meetings and Seminars for promoting and spreading the sense of sharing sorrows and
+          sufferings of human beings.</p><span id="about_dots">...</span><span id="about_more">          
+        <p>3. To weed-out from the society and human race: Bribery and illegal gratiﬁcation;Nepotism and
+          favoritism;Misconceptions arising out of hatred;Hoarding, proﬁteering and
+          black-marketing;Sectarianism;Disparity in economic and living standards and Full-ﬂedged struggle against
+          sub-standards behavioral inclinations and obscenity.</p>
+        <p>4. To eradicate all ill-founded rites, rituals and cruel conventions.</p>
+        <p>5. To uplift the poor, the backward, the neglected, the down-trodden, and the agonized people irrespective of
+          caste, creed, colour and gender.</p>
+        <p>6. To create a sense of Sobriety, social service, submissiveness, self-respect, self-restraint,
+          self-conﬁdence, self-vigilance, and to raise cultural and intellectual levels of the STUDENT COMMUNITY and the
+          up and coming GENERATION there by helping them to grow into better and useful citizens.</p>
+        <p>7. To extend all possible help in personal sphere and on the levels of al locality, village and town and
+          ﬁnally, in the Country</p>
+        </span>
+        <button onclick="aboutFunction()" id="about_myBtn">Read more</button>
+      </div>
+      <div class="col-md-6 order-1" data-aos="fade-left">
+        <img src="{% static 'images/hero_1.jpg' %}" alt="Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="site-section">
+
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-10">
+        <div class="heading-39101 mb-5">
+          <span class="backdrop text-center">Our Team</span>
+          <span class="subtitle-39191">Amazing Staff</span>
+          <h3>Meet Our Team</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="person-29191 text-center">
+          <img src="{% static 'images/person_1.jpg' %}" alt="Image" class="img-fluid mb-4">
+          <div class="px-4">
+            <h2 class="mb-2">John Doe</h2>
+            <p class="caption mb-4">Founder</p>
+            <p>Maulana Abul Hasan Nadvi, often referred to as Ali Miyan, was
+              an influential figure in the Islamic world.</p>
+            <div class="social_29128 mt-5">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="person-29191 text-center">
+          <img src="{% static 'images/person_2.jpg' %}" alt="Image" class="img-fluid mb-4">
+          <div class="px-4">
+            <h2 class="mb-2">Jean Doe</h2>
+            <p class="caption mb-4">Staff</p>
+            <p>Maulana Abul Hasan Nadvi, often referred to as Ali Miyan, was
+              an influential figure in the Islamic world.</p>
+            <div class="social_29128 mt-5">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="person-29191 text-center">
+          <img src="{% static 'images/person_3.jpg' %}" alt="Image" class="img-fluid mb-4">
+          <div class="px-4">
+            <h2 class="mb-2">Claire Dormey</h2>
+            <p class="caption mb-4">Staff</p>
+            <p>Maulana Abul Hasan Nadvi, often referred to as Ali Miyan, was
+              an influential figure in the Islamic world.</p>
+            <div class="social_29128 mt-5">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- <div class="site-section bg-image overlay" style="background-image: url('images/hero_1.jpg')">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7 text-center">
+        <h2 class="font-weight-bold text-white">Join and Trip With Us</h2>
+        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ut, doloremque quo
+          molestiae nesciunt officiis veniam, beatae dignissimos!</p>
+        <p class="mb-0"><a href="#" class="btn btn-primary text-white py-3 px-4">Get In Touch</a></p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<script>
+
+  {% block js %}
+  
+  function aboutFunction() {
+    console.log("clicked");
+    var dots = document.getElementById("about_dots");
+    var moreText = document.getElementById("about_more");
+    var btnText = document.getElementById("about_myBtn");
+    
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+    }
+  
+  {% endblock %}
+</script>
+{% endblock %}
